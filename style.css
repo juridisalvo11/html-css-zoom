@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 50px;
+    background-color: black;
+    text-align: right;
+}
+
+header button {
+    padding:5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: darkgrey;
+    border-color: darkgrey;
+}
+
+main {
+    height: calc(100vh - 120px);
+    background-color: black;
+}
+
+.avatar-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    overflow: auto;
+    text-transform: capitalize;
+}
+
+.avatar {
+    height: 150px;
+    width: 250px;
+    border: 4px solid black;
+    position: relative;
+}
+
+.avatar i {
+    color: red;
+}
+
+#tiger i {
+    color: green;
+}
+
+
+.name {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+}
+
+
+
+footer {
+    height: 70px;
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer i {
+    cursor: pointer;
+}
+
+footer i:hover {
+    opacity: 0.5;
+}
+
+.footer-left {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-left div {
+    color: white;
+}
+
+.microphone-footer i:first-child, .video-footer i:first-child {
+    margin-right: 10px;
+}
+
+.footer-center {
+    width: 1000px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+
+.footer-right {
+    width: 150px;
+}
+
+.footer-right button {
+    color:red;
+    width: 100%;
+    height: 100%;
+    background-color: darkslategrey;
+    border:0;
+    cursor: pointer;
+}
+
+.footer-right button:hover {
+    background-color: grey;
+}
+
+@media (max-width: 767px) {
+    .footer-center {
+        display: none;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+    footer{
+        font-size: 10px;
+    }
+}
